@@ -21,13 +21,18 @@
 }
 
 /***** Header *****/
-header {width:100%; position:fixed; box-shadow:0 3px 4px rgba(0,0,0,0.3); font-size:1rem; background-color: white; z-index:999; top:0;}
-.logo {float:left; padding:1em;}
+header {width:100%; position:fixed; box-shadow:0 3px 4px rgba(0,0,0,0.3); font-size:1rem; background-color: #222; z-index:999; top:0;
+	padding: 2rem; display: table-cell; vertical-align: middle; border-top: 3px solid #bba362;}
+.logo {float:left; margin-left: 3rem; margin-top: 0.5rem;}
+.logo img{width: 90%;}
+.text{color: #b1b1b1; font-size: 3rem; font-weight:500; line-height: 110%; display: inline-block; margin-left: 4%;}
+.text span:first-child{color:#bba362; font-weight:600;}
+
 .nav {cursor:pointer;}
 
 /***** navigation PC *****/
-.navs {float:right;}
-.navs .nav {float:right; padding:1em;}
+.navs {float:right; margin-right: 13rem;}
+.navs .nav { padding:0.5em; color:#b1b1b1;}
 
 /***** navigation Mobile *****/
 .navs_mo {float:right; padding:1em; display:none;}
@@ -44,26 +49,26 @@ header {width:100%; position:fixed; box-shadow:0 3px 4px rgba(0,0,0,0.3); font-s
 }
 
 /***** banner PC *****/
-.banner {position:relative; margin:3rem auto 0 auto; overflow:hidden;}
+.banner {position:relative; margin:2.1rem auto 0 auto; overflow:hidden;}
 .banner_wrap {position:relative; width:100%;} /*배너무빙의 기준*/
 .banner_wrap > li {position:absolute; width:100%;}
-.banner_slogan {position:absolute; width:90%; left:5%; top:50%; color:#fff; transform:translateY(-50%); font-size:1rem;}
-.banner_slogan > h1 {font-size:4em; margin-bottom:0.75em;}	
+.banner_slogan {position:absolute; width:90%; left:10%; top:50%; color:#fff; transform:translateY(-50%); font-size:1rem;}
+.banner_slogan > h1 {font-size:4em; margin-bottom:0.75em; color: #bba362; margin-top: 1em;}	
 .banner_slogan > h4 {font-size:1.5em; margin-bottom:1em;}	
 .banner_slogan > button {font-size:1em; padding:1em; 
-	background-color:rgba(248, 248, 219, .7); color:#121212; border:none;}	
-.banner_slogan > button:hover {background-color:rgba(248, 248, 219, 1);} 
+	background-color:rgba(187, 163, 98, .7); color:#121212; border:none;}	
+.banner_slogan > button:hover {background-color:#bba362;} 
 /* Horizental Only */
 .bt_banner {position:absolute; z-index:11; top:50%; transform:translateY(-50%); font-size:3rem; opacity:0.3;}
 .bt_banner:hover {opacity:0.8;}
-#bt_prev {left:5%;}
-#bt_next {right:5%;}
+#bt_prev {left:5%; color:rgb(168, 147, 54)!important; background-color: #000000 !important;}
+#bt_next {right:5%; color:rgb(168, 147, 54)!important; background-color: #000000 !important;}
 /* Vertical Only */
 /* .bt_banner {position:absolute; z-index:11; left:50%; top:50%; font-size:1rem; opacity:0;}
 #bt_prev {transform:translate(-50%, -120%);}
 #bt_next {transform:translate(-50%, 120%);} */
 
-.social_link {position:absolute; width:100%; bottom:3%; left:5%; text-align:left; z-index:10;}
+.social_link {position:absolute; width:100%; bottom:7%; left:5%; text-align:left; z-index:10;}
 .social_link > li {display:inline-block; color:#ccc; cursor:pointer;}
 .social_link > li:hover {color:#f1f1f1;}
 
@@ -119,9 +124,10 @@ header {width:100%; position:fixed; box-shadow:0 3px 4px rgba(0,0,0,0.3); font-s
 .member > ul > li:first-child > img:hover {animation-name:sizeUp;} 
 .member > ul > li:not(:first-child) {padding:1rem;}
 .member > ul > li:nth-child(2) {font-size:1.75em;}
-.member > ul > li:nth-child(3) {font-size:1.125em; color:#666;}
+.member > ul > li:nth-child(3) {font-size:0.85em; color:#bba362; padding: 0 0 0 1rem;}
 .member > ul > li:nth-child(4) {line-height:2em;}
 .member > ul > li:nth-child(5) > button {width:100%;}
+.w3-button:hover{background-color:#bba362!important;}
 /***** Team Response *****/
 @media screen and (max-width:768px) {
 	.member {width:48%; margin:1%;}
@@ -133,6 +139,7 @@ header {width:100%; position:fixed; box-shadow:0 3px 4px rgba(0,0,0,0.3); font-s
 /***** Partner PC *****/
 .partner {background-color:#555; text-align: center; color:#f8f8f8;}
 .partner_wrap > ul {width:25%; float:left; padding:3%; font-size:1rem;}
+.partner_wrap ul li{color:#bba362;}
 .partner_wrap > ul > li:first-child {font-size:2em; line-height:1.5em;}
 .partner_wrap > ul > li:last-child {font-size:1em;}
 /***** Partner Response *****/
@@ -175,7 +182,7 @@ header {width:100%; position:fixed; box-shadow:0 3px 4px rgba(0,0,0,0.3); font-s
 }
 
 /***** Skills PC *****/
-.skills {background-color:#eee; padding:5rem 0; font-size:1rem;}
+.skills {background-color:#f1f1f1; padding:5rem 0; font-size:1rem;}
 .skills > ul {width:94%; margin:auto; max-width:1200px;}
 .skills > ul > li {width:50%; float:left;}
 
@@ -228,7 +235,7 @@ header {width:100%; position:fixed; box-shadow:0 3px 4px rgba(0,0,0,0.3); font-s
 }
 
 /***** footer PC *****/
-footer {padding:5rem 0; background-color:#222; text-align: center; color:#eee;}
+footer {padding:5rem 0; background-color:#222; text-align: center; color:#bba362;}
 .footer_social_link {font-size:1.5em; padding:1em;}
 .footer_social_link > li {display:inline-block; cursor:pointer;}
 .footer_social_link > li:hover {color:#fff;}
